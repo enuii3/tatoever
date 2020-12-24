@@ -24,7 +24,12 @@ Style/Documentation:
 Metrics/LineLength:
   Enabled: false
 
+# Block has too many linesを無視
+Metrics/BlockLength:
+  Enabled: false
+
 # Use nested module/class definitions instead of compact style. を無視
 Style/ClassAndModuleChildren:
   Enabled: false
+
 
