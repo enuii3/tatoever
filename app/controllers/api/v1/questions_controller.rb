@@ -3,4 +3,3 @@ class Api::V1::QuestionsController < ApplicationController
     @questions = Question.all
   end
 end
-
