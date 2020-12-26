@@ -4,17 +4,20 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import QuestionIndexPage from '../components/pages/QuestionIndexPage'
-import QuestionDetailPage from '../components/pages/QuestionDetailPage'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom"
 
+import Header from '../components/organisms/Header'
+import QuestionIndexPage from '../components/pages/QuestionIndexPage'
+import QuestionDetailPage from '../components/pages/QuestionDetailPage'
+
 export default function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path={ '/' }>
           <QuestionIndexPage />
